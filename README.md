@@ -1,17 +1,25 @@
 # cross-agent-event-bus
 
-Event bus and workflow coordination backbone for agent ecosystems.
+Event backbone for resilient communication and workflow choreography.
 
-## What This Project Does
+## Scope
 
-This repository provides infrastructure primitives for production-grade AI agent systems.
+Topic design, schema contracts, and idempotent consumer handling.
 
-## Core Capabilities
+## Capabilities
 
-- Secure service boundaries
-- Scalable runtime operations
-- Auditable decision and tool execution paths
-- Extensible APIs for integration
+- Topic design, schema contracts, and idempotent consumer handling.
+- Saga orchestration patterns for multi-step recovery workflows.
+- Delivery guarantees with dead-letter and replay controls.
+- Cross-service observability and ordered event processing support.
+
+## Repository Layout
+
+- `src/main.py` entrypoint and lightweight service bootstrap
+- `src/project_profile.py` canonical project metadata
+- `src/service_contract.py` baseline domain contract shape
+- `tests/` smoke and contract tests
+- `docs/` architecture and roadmap
 
 ## Quick Start
 
